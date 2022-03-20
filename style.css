@@ -22,7 +22,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background: var(--azul-escuro);
-    padding: 0px 90px;
+    padding: 0px 160px;
     
 }
 .cabecalho__nav-bar{
@@ -49,9 +49,14 @@ header{
     justify-content: space-between;
 
     background: var(--azul-escuro);
-    padding:70px 180px;
+    padding:70px 160px;
 
 }
+
+.imagem__inicio{
+    width: 100%;
+}
+
 
 .texto__inicio{
     display: flex;
@@ -84,7 +89,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    padding: 100px;
+    padding: 160px;
 
     font-size: 40px;
     font-weight: bold;
@@ -139,7 +144,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    gap: 20rem;
+    gap: 23rem;
 }
 
 .texto__servicos{
@@ -162,7 +167,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 130px;
+    padding: 60px 160px;
     background: var(--azul-escuro);
 }
 
@@ -177,8 +182,6 @@ header{
     width: 100%;
     justify-content: space-between;
     margin-top: 60px;
-    
-    
 }
 
 .formulario__contato{
@@ -242,7 +245,7 @@ footer{
     color: var(--branco);
 
     font-size: 16px;
-    padding: 10px;
+    padding: 0px 160px;
 }
 
 .icones__rodape{
@@ -251,3 +254,42 @@ footer{
 }
 
 /* ---------------------------------------------- */
+
+
+/* ----------------- VERSÃO MOBILE ---------------*/
+
+
+@media (max-width: 800px){
+
+    /* ============== cabecalho =================  */
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 160px;
+    }
+
+    .cabecalho__nav-bar{
+        display: flex;
+        gap: 60px;
+        margin-top: 20px;
+    }
+/* =================================================== */
+
+    .inicio{
+        background: var(--azul-escuro);
+        padding: 50px 0px;
+
+    }
+
+    
+
+
+    .texto__inicio{
+        display: flex;
+        
+        font-size: 32px;
+        color: var(--branco);
+    }
+
+   
+}
