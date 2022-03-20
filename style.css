@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    
-}
+
 
 :root{
     --azul-claro: #6DDAD3;  
@@ -45,6 +39,7 @@ header{
 
 .inicio{
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
 
@@ -259,37 +254,135 @@ footer{
 /* ----------------- VERSÃO MOBILE ---------------*/
 
 
-@media (max-width: 800px){
+@media screen and (max-width: 900px){
 
     /* ============== cabecalho =================  */
     header{
         display: flex;
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
         padding: 0px 160px;
     }
 
     .cabecalho__nav-bar{
         display: flex;
-        gap: 60px;
+        gap: 40px;
         margin-top: 20px;
+    
     }
 /* =================================================== */
 
+
+
+/* =============== section - inicio Mobile =========== */
     .inicio{
         background: var(--azul-escuro);
-        padding: 50px 0px;
+        justify-content: center;
+        padding: 130px 30px;
 
     }
 
+    .imagem__inicio{
+        display:none;
+    }
+
+    .texto__inicio{
+        font-size: 32px;
+    }
+
+    .p__inicio{
+        font-size: 10px;
+    }
+
+
+/* =========================================== */
     
 
 
-    .texto__inicio{
+/* ======= section - quem somos mobile ======== */
+
+    .quem-somos h2{
         display: flex;
-        
-        font-size: 32px;
-        color: var(--branco);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding: 30px 0px;
+          
     }
 
+    .principal__quem-somos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem__quem-somos{
+        margin-top: 50px;
+    }
+
+/* =========================================== */
+
+
+    .principal__servicos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    /* ================================================= */
+
+
+
+    /* ============= section - servicos - mobile ======= */
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    .principal__servicos{
+        display: flex;
+        gap: 80px;
+    }
+/* =============================================== */
+
+
+   .contato{
+       display: flex;
+       align-items: center;
+       padding: 20px;
+       
+   }
+   .formulario__contato{
+       display: flex;
+       width: 100%;
+       margin-bottom: 30px;
+       
+   }
    
+   .imagem__contato{
+    display: none;
+   }
+
+
+    textarea, input{
+        margin-top: 10px; 
+    }
+
+
+
+    footer{
+        display: flex;
+        width: 100%;
+        padding: 0px;
+
+        font-size: 8px;
+    }
+
+    .icones__rodape{
+        display: flex;
+        gap: 10px;
+    }
+
 }
