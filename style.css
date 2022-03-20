@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+:root{
+    --azul-claro: #6DDAD3;  
+    --azul-escuro: #132235; 
+    --branco: #ffffff;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --------------------- cabeçalho - header ----------------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--azul-escuro);
+    padding: 0px 90px;
+    
+}
+.cabecalho__nav-bar{
+    display: flex;
+    gap: 40px;
+    color: var(--branco);
+}
+
+.logo__cabecalho{
+    height: 60px;
+}
+/* --------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------ section - inicio ---------------- */
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--azul-escuro);
+    padding:70px 180px;
+
+}
+
+.texto__inicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+    font-size: 48px;
+    color: var(--branco);
+}
+
+.cor__nome{
+    color: var(--azul-claro);
+}
+
+.p__inicio{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+
+/* -------------------- section - quem somos ------------------- */
+.quem-somos h2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 100px;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+.principal__quem-somos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    vertical-align: top;
+    margin-top: 50px;
+
+}
+
+.texto__quem-somos{
+   display: flex;
+   text-align: justify;
+   line-height: 24px;
+   max-width:300px;
+   flex-direction: column;
+   font-size: 16px;
+   color: var(--azul-escuro);
+   gap: 1.875rem;
+}
+
+
+.imagem__quem-somos{
+    height: 300px;
+}
+/* ------------------------------------------------------------- */
+
+
+
+
+/* -------------------- section - serviços ------------- */
+
+.servicos h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+.principal__servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 20rem;
+}
+
+.texto__servicos{
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+    max-width: 94px;
+}
+
+/* -------------------------------------------------------- */
+
+
+
+
+/* ------------------------- section - contato ----------------- */
+
+.contato{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 130px;
+    background: var(--azul-escuro);
+}
+
+.titulo__contato{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--branco);
+}
+    
+.principal__contato{
+    display: flex; 
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+    
+}
+
+.formulario__contato{
+    display: flex;
+    width: 45%;
+    flex-direction: column;  
+    color: var(--branco);
+    
+}
+
+label{
+    margin-top: 25px;
+    color: var(--branco);
+}
+textarea, input{
+    margin-top: 5px;
+    border-radius: 8px;
+    background: none;
+    border: 1px solid var(--branco);
+    padding: 15px;
+}
+
+
+.botao__enviar{
+    background: var(--azul-claro);
+    padding: 5px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+textarea:focus,input:focus{
+    border: 3px solid var(--azul-claro);
+    border-radius: 5px;
+    outline: 0;
+}
+
+textarea::placeholder, input::placeholder{
+    color: #24436a;
+}
+.imagem__contato{
+    width: 35%;
+}
+
+.logo__rodape{
+    height: 40px;
+}
+
+
+/* -------------------------------------------------*/
+
+
+
+/* --------------------- footer -------------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--azul-escuro);
+    color: var(--branco);
+
+    font-size: 16px;
+    padding: 10px;
+}
+
+.icones__rodape{
+    display: flex;
+    gap: 4rem;
+}
+
+/* ---------------------------------------------- */
