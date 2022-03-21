@@ -11,20 +11,44 @@ body{
 }
 
 /* --------------------- cabeçalho - header ----------------- */
+
 header{
     display: flex;
+    position: fixed;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     background: var(--azul-escuro);
-    padding: 0px 160px;
+    padding: 25px 160px;
     
 }
 .cabecalho__nav-bar{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     color: var(--branco);
+    
 }
 
+.componente__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+
+
+        /* animações itens */
+    .bolinha__indicadora{
+        background: var(--azul-claro);
+        border-radius: 50px;
+        width: 12px;
+        height: 12px;
+            
+    }
+
+  /* ------------------------------------ */
 .logo__cabecalho{
     height: 60px;
 }
@@ -44,7 +68,9 @@ header{
     justify-content: space-between;
 
     background: var(--azul-escuro);
-    padding:70px 160px;
+    padding:165px 160px;
+
+    
 
 }
 
@@ -251,6 +277,91 @@ footer{
 /* ---------------------------------------------- */
 
 
+
+
+/* -------------------------------------------------------- */
+
+
+
+/* ============= Indicador - bolinha - inicio =========  */
+
+.componente__menu a {
+    color: var(--azul-claro);
+}
+
+.componente__menu a:not(.ind_inicio){
+    color: #FFFFFF80;
+}
+
+.componente__menu div{
+    background: var(--azul-claro);
+}
+
+.componente__menu div:not(.bolinha__inicio){
+    display: none;
+}
+
+
+/* ============= Indicador - bolinha - quem somos =========  */
+.cabecalho__nav-bar.indica_quem-somos .componente__menu a{
+    color: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_quem-somos .componente__menu a:not(.ind_quem-somos){
+    color: #FFFFFF80;
+}
+
+.cabecalho__nav-bar.indica_quem-somos .componente__menu div{
+    display: flex;
+    background: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_quem-somos .componente__menu div:not(.ind_quem-somos){
+    display: none;
+}
+
+
+/* ============= Indicador - bolinha - serviços =========  */
+.cabecalho__nav-bar.indica_servicos .componente__menu a{
+    color: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_servicos .componente__menu a:not(.ind_servicos){
+    color: #FFFFFF80;
+}
+
+.cabecalho__nav-bar.indica_servicos .componente__menu div{
+    display: flex;
+    background: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_servicos .componente__menu div:not(.ind_servicos){
+    display: none;
+}
+
+
+/* ============= Indicador - bolinha - contato =========  */
+
+.cabecalho__nav-bar.indica_contato .componente__menu a{
+    color: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_contato .componente__menu a:not(.ind_contato){
+    color: #FFFFFF80;
+}
+
+.cabecalho__nav-bar.indica_contato .componente__menu div{
+    display: flex;
+    background: var(--azul-claro);
+}
+
+.cabecalho__nav-bar.indica_contato .componente__menu div:not(.ind_servicos){
+    display: none;
+}
+
+
+
+
 /* ----------------- VERSÃO MOBILE ---------------*/
 
 
@@ -262,14 +373,20 @@ footer{
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        padding: 0px 160px;
+        padding: 40px 0px;
     }
 
     .cabecalho__nav-bar{
         display: flex;
         gap: 40px;
-        margin-top: 20px;
-    
+        margin-top: 20px;  
+    }
+
+    .componente__menu{
+        font-size: 16px;
+    }
+    .bolinha__indicadora{
+        display: none;
     }
 /* =================================================== */
 
@@ -277,9 +394,11 @@ footer{
 
 /* =============== section - inicio Mobile =========== */
     .inicio{
+        display: flex;
         background: var(--azul-escuro);
         justify-content: center;
-        padding: 130px 30px;
+        padding: 190px 30px;
+        
 
     }
 
@@ -369,8 +488,6 @@ footer{
     textarea, input{
         margin-top: 10px; 
     }
-
-
 
     footer{
         display: flex;
