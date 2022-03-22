@@ -2,27 +2,30 @@
     --azul-claro: #6DDAD3;
     --azul-escuro: #132235;
     --branco: #ffffff;
-    --cinza: #FFFFFF80; 
+    --cinza: #FFFFFF80;
+    --verde: green;
+    --vermelho: red;
 }
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 /* ----------------------------------------- barra de rolagem ------------------------------  */
 
-    body::-webkit-scrollbar {
-        width: 8px;              
-      }
-      
-      body::-webkit-scrollbar-track {
-        background: var(--branco);       
-      }
-      
-      body::-webkit-scrollbar-thumb {
-        background-color: var(--azul-escuro);   
-        border-radius: 20px;       
-      }
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--branco);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--azul-escuro);
+    border-radius: 20px;
+}
 
 
 /* --------------------- cabeçalho - header ----------------- */
@@ -55,11 +58,11 @@ header {
     height: 60px;
 }
 
-/* --------------------------------------------- */
+
+/* ------------------------------------------------------ */
 
 
-
-/* ------------- BOLINHA ITENS ------------*/
+/* ------------- BOLINHA QUE INDICA OS ITENS ------------*/
 
 .bolinha__indicadora {
     background: var(--azul-claro);
@@ -69,10 +72,10 @@ header {
 }
 
 
-/* ------------------------------------ */
+/* ---------------------------------------------------- */
 
 
-/* ------------------ section - inicio ---------------- */
+/* ------------------ SEÇÃO - INICIO ---------------- */
 
 .inicio {
     display: flex;
@@ -109,7 +112,7 @@ header {
 /* ------------------------------------------------------------ */
 
 
-/* -------------------- section - quem somos ------------------- */
+/* -------------------- SEÇÃO - QUEM SOMOS ------------------- */
 
 .quem-somos h2 {
     display: flex;
@@ -150,7 +153,7 @@ header {
 /* ------------------------------------------------------------- */
 
 
-/* -------------------- section - serviços ------------- */
+/* -------------------- SECÇÃO - SERVIÇOS  -------------------- */
 
 .servicos h2 {
     display: flex;
@@ -180,10 +183,10 @@ header {
 }
 
 
-/* -------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 
 
-/* ------------------------- section - contato ----------------- */
+/* ------------------------- SEÇÃO - CONTATO ------------------------ */
 
 .contato {
     display: flex;
@@ -208,8 +211,10 @@ header {
     margin-top: 60px;
 }
 
-/* -------------- FORMULÁRIO ----------------- */
-form{
+
+/* ------------------------------ FORMULÁRIO -------------------------------- */
+
+form {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -221,6 +226,17 @@ form{
     flex-direction: column;
     color: var(--branco);
 }
+
+.imagem__contato {
+    width: 35%;
+}
+
+.logo__rodape {
+    height: 40px;
+}
+
+
+/* ------------------------------------- FORMULÁRIO ---------------------------------- */
 
 label {
     margin-top: 30px;
@@ -237,14 +253,21 @@ input {
 }
 
 #botao__enviar {
-    background: var(--azul-claro);
+    background: var(--branco);
     padding: 8px;
     font-weight: bold;
+    border: 1px solid var(--azul-claro);
     color: var(--azul-escuro);
     cursor: pointer;
     margin-top: 10px;
     border-radius: 10px;
     width: 50%;
+    transition: 0.4s;
+}
+
+#botao__enviar:hover {
+    background-color: var(--azul-claro);
+    color: white;
 }
 
 textarea:focus,
@@ -259,35 +282,45 @@ input::placeholder {
     color: var(--cinza);
 }
 
-#mensagem_enviar{
+
+/* ------------------------------------------------------------------------------ */
+
+
+/* ---------------------- PARTE DA VALIDAÇÃO DO FORMULÁRIO ----------------------- */
+
+#mensagem_enviar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 18px;
 }
-.verde{
-    color: green;
+
+.verde {
+    color: var(--verde);
     font-weight: bold;
 }
-.vermelho{
-    color: red;
+
+.vermelho {
+    color: var(--vermelho);
     font-weight: bold;
 }
-.button_form{
+
+.button_form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
     margin-top: 5px;
 }
-.desaparece{
+
+.desaparece {
     display: none;
 }
 
-.aparece{
+.aparece {
     display: inline;
     color: var(--azul-claro);
-    background-color:none;
+    background-color: none;
     border: 3px solid var(--azul-claro);
     width: 50px;
     align-items: center;
@@ -296,20 +329,10 @@ input::placeholder {
 }
 
 
-.imagem__contato {
-    width: 35%;
-}
-
-.logo__rodape {
-    height: 40px;
-}
+/* ----------------------------------------------------------------- */
 
 
-
-/* -------------------------------------------------*/
-
-
-/* --------------------- footer -------------------*/
+/* -------------------------- RODAPÉ ------------------------------*/
 
 footer {
     display: flex;
@@ -326,10 +349,11 @@ footer {
     gap: 4rem;
 }
 
+
 /* -------------------------------------------------------- */
 
 
-/* ============= Indicador - bolinha - inicio =========  */
+/* ============================== Indicador - bolinha - inicio ==============================  */
 
 .componente__menu a {
     color: var(--azul-claro);
@@ -351,7 +375,7 @@ footer {
 /* ------------------------------------------- */
 
 
-/* ============= Indicador - bolinha - quem somos =========  */
+/* ============================= Indicador - bolinha - quem somos ==============================  */
 
 .cabecalho__nav-bar.indica_quem-somos .componente__menu a {
     color: var(--azul-claro);
@@ -371,7 +395,7 @@ footer {
 }
 
 
-/* ============= Indicador - bolinha - serviços =========  */
+/* ========================== Indicador - bolinha - serviços =================================  */
 
 .cabecalho__nav-bar.indica_servicos .componente__menu a {
     color: var(--azul-claro);
@@ -391,8 +415,7 @@ footer {
 }
 
 
-
-/* ============= Indicador - bolinha - contato =========  */
+/* ============================ Indicador - bolinha - contato =================================  */
 
 .cabecalho__nav-bar.indica_contato .componente__menu a {
     color: var(--azul-claro);
@@ -410,8 +433,6 @@ footer {
 .cabecalho__nav-bar.indica_contato .componente__menu div:not(.bolinha__contato) {
     display: none;
 }
-
-
 
 
 /* ----------------- VERSÃO MOBILE ---------------*/
@@ -433,10 +454,8 @@ footer {
     .componente__menu {
         font-size: 16px;
     }
-    
     /* =================================================== */
-    /* =============== section - inicio Mobile =========== */
-
+    /* =============== seção - inicio Mobile =========== */
     .inicio {
         display: flex;
         background: var(--azul-escuro);
@@ -453,7 +472,7 @@ footer {
         font-size: 10px;
     }
     /* =========================================== */
-    /* ======= section - quem somos mobile ======== */
+    /* ======= Seção - Quem Somos Mobile ======== */
     .quem-somos h2 {
         display: flex;
         width: 100%;
@@ -471,12 +490,11 @@ footer {
         margin-top: 50px;
     }
     /* =========================================== */
+    /* ============= section - Servicos Mobile ======= */
     .principal__servicos {
         display: flex;
         flex-direction: column;
     }
-    /* ================================================= */
-    /* ============= section - servicos - mobile ======= */
     .servicos {
         display: flex;
         flex-direction: column;
@@ -487,6 +505,7 @@ footer {
         gap: 80px;
     }
     /* =============================================== */
+    /* ============= Seção - Contatos Mobile ======= */
     .contato {
         display: flex;
         align-items: center;
@@ -500,15 +519,15 @@ footer {
     .imagem__contato {
         display: none;
     }
-    #botao__enviar{
+    /* ================ Formulário Mobile ================ */
+    #botao__enviar {
         width: 100%;
     }
     textarea,
     input {
         margin-top: 10px;
     }
-
-    
+    /*============== Rodapé Mobile ==============*/
     footer {
         display: flex;
         width: 100%;
