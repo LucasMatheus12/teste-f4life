@@ -2,11 +2,27 @@
     --azul-claro: #6DDAD3;
     --azul-escuro: #132235;
     --branco: #ffffff;
+    --cinza: #FFFFFF80; 
 }
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* ----------------------------------------- barra de rolagem ------------------------------  */
+
+    body::-webkit-scrollbar {
+        width: 8px;              
+      }
+      
+      body::-webkit-scrollbar-track {
+        background: var(--branco);       
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--azul-escuro);   
+        border-radius: 20px;       
+      }
 
 
 /* --------------------- cabeçalho - header ----------------- */
@@ -35,8 +51,15 @@ header {
     gap: 10px;
 }
 
+.logo__cabecalho {
+    height: 60px;
+}
 
-/* animações itens */
+/* --------------------------------------------- */
+
+
+
+/* ------------- BOLINHA ITENS ------------*/
 
 .bolinha__indicadora {
     background: var(--azul-claro);
@@ -47,13 +70,6 @@ header {
 
 
 /* ------------------------------------ */
-
-.logo__cabecalho {
-    height: 60px;
-}
-
-
-/* --------------------------------------------------------------- */
 
 
 /* ------------------ section - inicio ---------------- */
@@ -192,7 +208,7 @@ header {
     margin-top: 60px;
 }
 
-
+/* -------------- FORMULÁRIO ----------------- */
 form{
     display: flex;
     width: 100%;
@@ -220,7 +236,7 @@ input {
     padding: 15px;
 }
 
-.botao__enviar {
+#botao__enviar {
     background: var(--azul-claro);
     padding: 8px;
     font-weight: bold;
@@ -240,20 +256,42 @@ input:focus {
 
 textarea::placeholder,
 input::placeholder {
-    color: #24436a;
+    color: var(--cinza);
 }
 
-.formulario__contato span.error{
+#mensagem_enviar{
     display: flex;
-    padding: 0px;
-
-    background-color: rgba(255, 0, 0, 0.2);
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+}
+.verde{
+    color: green;
+    font-weight: bold;
+}
+.vermelho{
+    color: red;
+    font-weight: bold;
+}
+.button_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.desaparece{
+    display: none;
 }
 
-.formulario__contato span.error.active{
-    border: 1px solid red;
-    padding: 0.4rem;
+.aparece{
+    display: inline;
+    color: red;
+    background-color: white;
+    width: 50px;
+    align-items: center;
 }
+
 
 .imagem__contato {
     width: 35%;
@@ -262,6 +300,7 @@ input::placeholder {
 .logo__rodape {
     height: 40px;
 }
+
 
 
 /* -------------------------------------------------*/
@@ -283,10 +322,6 @@ footer {
     display: flex;
     gap: 4rem;
 }
-
-
-/* ---------------------------------------------- */
-
 
 /* -------------------------------------------------------- */
 
@@ -320,7 +355,7 @@ footer {
 }
 
 .cabecalho__nav-bar.indica_quem-somos .componente__menu a:not(.ind_quem-somos) {
-    color: #FFFFFF80;
+    color: var(--cinza);
 }
 
 .cabecalho__nav-bar.indica_quem-somos .componente__menu div {
@@ -340,7 +375,7 @@ footer {
 }
 
 .cabecalho__nav-bar.indica_servicos .componente__menu a:not(.ind_servicos) {
-    color: #FFFFFF80;
+    color: var(--cinza);
 }
 
 .cabecalho__nav-bar.indica_servicos .componente__menu div {
@@ -361,7 +396,7 @@ footer {
 }
 
 .cabecalho__nav-bar.indica_contato .componente__menu a:not(.ind_contato) {
-    color: #FFFFFF80;
+    color: var(--cinza);
 }
 
 .cabecalho__nav-bar.indica_contato .componente__menu div {
@@ -372,6 +407,8 @@ footer {
 .cabecalho__nav-bar.indica_contato .componente__menu div:not(.bolinha__contato) {
     display: none;
 }
+
+
 
 
 /* ----------------- VERSÃO MOBILE ---------------*/
@@ -460,7 +497,7 @@ footer {
     .imagem__contato {
         display: none;
     }
-    .botao__enviar{
+    #botao__enviar{
         width: 100%;
     }
     textarea,

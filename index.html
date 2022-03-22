@@ -63,12 +63,15 @@
 
                 <div class="texto__quem-somos">
                     <p>
-                        F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias, onde a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.
+                        F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias, onde a empresa
+                        realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente
+                        específico e otimizado para a vida de graduação.
                     </p>
                 </div>
 
                 <div>
-                    <img class="imagem__quem-somos" src="imagens-titulos/quemsomos.svg" alt="Imagem de duvida do titulo quem somos? ">
+                    <img class="imagem__quem-somos" src="imagens-titulos/quemsomos.svg"
+                        alt="Imagem de duvida do titulo quem somos? ">
                 </div>
 
             </div>
@@ -106,21 +109,25 @@
             <div class="principal__contato">
 
 
-                <form  action="">
+                <form action="">
                     <div class="formulario__contato">
-                        <label for="email">Email</label>
-                        <input class="email" type="email" name="email" required placeholder="user@example.com">
+                        <label for="email">E-mail: *</label>
+                        <input id="email" type="email" name="email" required placeholder="user@example.com">
                         <span class="error"></span>
                     </div>
 
                     <div class="formulario__contato">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea name="Mensagem" required rows="8" placeholder="Digite sua mensagem aqui"></textarea>
+                        <label for="mensagem">Mensagem: *</label>
+                        <textarea id="mensagem" name="Mensagem" required rows="8" placeholder="Digite sua mensagem aqui"></textarea>
                         <span class="error"></span>
                     </div>
 
-                    <button type="submit" class="botao__enviar">Enviar</button>
-                
+                    <div class="button_form">
+                        <p id="mensagem_enviar"></p>
+                        <button id="botao_ok" class="desaparece">Ok</button>
+                    </div>
+                    <button type="submit" id="botao__enviar">Enviar</button>
+
                 </form>
 
                 <img class="imagem__contato" src="imagens-titulos/contato.svg" alt="imagem do titulo contato">
@@ -135,16 +142,21 @@
         <a href="#id_inicio"><img class="logo__rodape" src="imagens-titulos/logo2.png" alt="logo da empresa"></a>
 
         <div class="icones__rodape">
-            <a href="https://www.facebook.com/" target="_blank"><img src="icones-projeto/facebook.svg" alt="icone do facebook"></a>
-            <a href="https://twitter.com/i/flow/login" target="_blank"><img src="icones-projeto/twitter.svg" alt="icone do twitter"></a>
-            <a href="https://www.linkedin.com/home" target="_blank"><img src="icones-projeto/linkedin.svg" alt="icone do linkedin"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="icones-projeto/facebook.svg"
+                    alt="icone do facebook"></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><img src="icones-projeto/twitter.svg"
+                    alt="icone do twitter"></a>
+            <a href="https://www.linkedin.com/home" target="_blank"><img src="icones-projeto/linkedin.svg"
+                    alt="icone do linkedin"></a>
         </div>
+
         <p>
             F 4 L I F E - Serviços imobiliario -Patu-RN - 785
         </p>
     </footer>
 
     <script src="projeto.js"></script>
+
 </body>
 
 </html>
