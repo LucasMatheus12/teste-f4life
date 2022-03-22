@@ -1,18 +1,17 @@
-
-
-:root{
-    --azul-claro: #6DDAD3;  
-    --azul-escuro: #132235; 
+:root {
+    --azul-claro: #6DDAD3;
+    --azul-escuro: #132235;
     --branco: #ffffff;
 }
 
-body{
+html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 /* --------------------- cabeçalho - header ----------------- */
 
-header{
+header {
     display: flex;
     position: fixed;
     width: 100%;
@@ -20,16 +19,15 @@ header{
     justify-content: space-between;
     background: var(--azul-escuro);
     padding: 25px 160px;
-    
 }
-.cabecalho__nav-bar{
+
+.cabecalho__nav-bar {
     display: flex;
     gap: 50px;
     color: var(--branco);
-    
 }
 
-.componente__menu{
+.componente__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,151 +36,140 @@ header{
 }
 
 
+/* animações itens */
 
-        /* animações itens */
-    .bolinha__indicadora{
-        background: var(--azul-claro);
-        border-radius: 50px;
-        width: 12px;
-        height: 12px;
-            
-    }
+.bolinha__indicadora {
+    background: var(--azul-claro);
+    border-radius: 50px;
+    width: 12px;
+    height: 12px;
+}
 
-  /* ------------------------------------ */
-.logo__cabecalho{
+
+/* ------------------------------------ */
+
+.logo__cabecalho {
     height: 60px;
 }
+
+
 /* --------------------------------------------------------------- */
-
-
-
 
 
 /* ------------------ section - inicio ---------------- */
 
-
-.inicio{
+.inicio {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-
     background: var(--azul-escuro);
-    padding:165px 160px;
-
-    
-
+    padding: 165px 160px;
 }
 
-.imagem__inicio{
+.imagem__inicio {
     width: 100%;
 }
 
-
-.texto__inicio{
+.texto__inicio {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    
     font-size: 48px;
     color: var(--branco);
 }
 
-.cor__nome{
+.cor__nome {
     color: var(--azul-claro);
 }
 
-.p__inicio{
+.p__inicio {
     font-size: 16px;
     margin-top: 20px;
 }
 
+
 /* ------------------------------------------------------------ */
 
 
-
 /* -------------------- section - quem somos ------------------- */
-.quem-somos h2{
+
+.quem-somos h2 {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
     padding: 160px;
-
     font-size: 40px;
     font-weight: bold;
     color: var(--azul-escuro);
 }
 
-.principal__quem-somos{
+.principal__quem-somos {
     display: flex;
     width: 100%;
     justify-content: space-around;
     vertical-align: top;
     margin-top: 50px;
-
 }
 
-.texto__quem-somos{
-   display: flex;
-   text-align: justify;
-   line-height: 24px;
-   max-width:300px;
-   flex-direction: column;
-   font-size: 16px;
-   color: var(--azul-escuro);
-   gap: 1.875rem;
+.texto__quem-somos {
+    display: flex;
+    text-align: justify;
+    line-height: 24px;
+    max-width: 300px;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--azul-escuro);
+    gap: 1.875rem;
 }
 
-
-.imagem__quem-somos{
+.imagem__quem-somos {
     height: 300px;
 }
+
+
 /* ------------------------------------------------------------- */
-
-
 
 
 /* -------------------- section - serviços ------------- */
 
-.servicos h2{
+.servicos h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 100px;
-
     font-size: 40px;
     font-weight: bold;
     color: var(--azul-escuro);
 }
 
-.principal__servicos{
+.principal__servicos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
     gap: 23rem;
+    padding: 150px 0px;
 }
 
-.texto__servicos{
+.texto__servicos {
     display: flex;
     margin-top: 25px;
     text-align: center;
     max-width: 94px;
 }
 
+
 /* -------------------------------------------------------- */
-
-
 
 
 /* ------------------------- section - contato ----------------- */
 
-.contato{
+.contato {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -192,32 +179,40 @@ header{
     background: var(--azul-escuro);
 }
 
-.titulo__contato{
+.titulo__contato {
     font-size: 40px;
     font-weight: bold;
     color: var(--branco);
 }
-    
-.principal__contato{
-    display: flex; 
+
+.principal__contato {
+    display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 60px;
 }
 
-.formulario__contato{
+
+form{
     display: flex;
-    width: 45%;
-    flex-direction: column;  
-    color: var(--branco);
-    
+    width: 100%;
+    flex-direction: column;
 }
 
-label{
-    margin-top: 25px;
+.formulario__contato {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
     color: var(--branco);
 }
-textarea, input{
+
+label {
+    margin-top: 30px;
+    color: var(--branco);
+}
+
+textarea,
+input {
     margin-top: 5px;
     border-radius: 8px;
     background: none;
@@ -225,29 +220,46 @@ textarea, input{
     padding: 15px;
 }
 
-
-.botao__enviar{
+.botao__enviar {
     background: var(--azul-claro);
-    padding: 5px;
+    padding: 8px;
     font-weight: bold;
     color: var(--azul-escuro);
     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 50%;
 }
 
-textarea:focus,input:focus{
+textarea:focus,
+input:focus {
     border: 3px solid var(--azul-claro);
     border-radius: 5px;
     outline: 0;
 }
 
-textarea::placeholder, input::placeholder{
+textarea::placeholder,
+input::placeholder {
     color: #24436a;
 }
-.imagem__contato{
+
+.formulario__contato span.error{
+    display: flex;
+    padding: 0px;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.formulario__contato span.error.active{
+    border: 1px solid red;
+    padding: 0.4rem;
+}
+
+.imagem__contato {
     width: 35%;
 }
 
-.logo__rodape{
+.logo__rodape {
     height: 40px;
 }
 
@@ -255,32 +267,28 @@ textarea::placeholder, input::placeholder{
 /* -------------------------------------------------*/
 
 
-
 /* --------------------- footer -------------------*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--azul-escuro);
     color: var(--branco);
-
     font-size: 16px;
     padding: 0px 160px;
 }
 
-.icones__rodape{
+.icones__rodape {
     display: flex;
     gap: 4rem;
 }
 
+
 /* ---------------------------------------------- */
 
 
-
-
 /* -------------------------------------------------------- */
-
 
 
 /* ============= Indicador - bolinha - inicio =========  */
@@ -289,217 +297,186 @@ footer{
     color: var(--azul-claro);
 }
 
-.componente__menu a:not(.ind_inicio){
+.componente__menu a:not(.ind_inicio) {
     color: #FFFFFF80;
 }
 
-.componente__menu div{
+.componente__menu div {
     background: var(--azul-claro);
 }
 
-.componente__menu div:not(.bolinha__inicio){
+.componente__menu div:not(.bolinha__inicio) {
     display: none;
 }
 
 
+/* ------------------------------------------- */
+
+
 /* ============= Indicador - bolinha - quem somos =========  */
-.cabecalho__nav-bar.indica_quem-somos .componente__menu a{
+
+.cabecalho__nav-bar.indica_quem-somos .componente__menu a {
     color: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_quem-somos .componente__menu a:not(.ind_quem-somos){
+.cabecalho__nav-bar.indica_quem-somos .componente__menu a:not(.ind_quem-somos) {
     color: #FFFFFF80;
 }
 
-.cabecalho__nav-bar.indica_quem-somos .componente__menu div{
+.cabecalho__nav-bar.indica_quem-somos .componente__menu div {
     display: flex;
     background: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_quem-somos .componente__menu div:not(.ind_quem-somos){
+.cabecalho__nav-bar.indica_quem-somos .componente__menu div:not(.bolinha__quem-somos) {
     display: none;
 }
 
 
 /* ============= Indicador - bolinha - serviços =========  */
-.cabecalho__nav-bar.indica_servicos .componente__menu a{
+
+.cabecalho__nav-bar.indica_servicos .componente__menu a {
     color: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_servicos .componente__menu a:not(.ind_servicos){
+.cabecalho__nav-bar.indica_servicos .componente__menu a:not(.ind_servicos) {
     color: #FFFFFF80;
 }
 
-.cabecalho__nav-bar.indica_servicos .componente__menu div{
+.cabecalho__nav-bar.indica_servicos .componente__menu div {
     display: flex;
     background: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_servicos .componente__menu div:not(.ind_servicos){
+.cabecalho__nav-bar.indica_servicos .componente__menu div:not(.bolinha__servicos) {
     display: none;
 }
+
 
 
 /* ============= Indicador - bolinha - contato =========  */
 
-.cabecalho__nav-bar.indica_contato .componente__menu a{
+.cabecalho__nav-bar.indica_contato .componente__menu a {
     color: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_contato .componente__menu a:not(.ind_contato){
+.cabecalho__nav-bar.indica_contato .componente__menu a:not(.ind_contato) {
     color: #FFFFFF80;
 }
 
-.cabecalho__nav-bar.indica_contato .componente__menu div{
+.cabecalho__nav-bar.indica_contato .componente__menu div {
     display: flex;
     background: var(--azul-claro);
 }
 
-.cabecalho__nav-bar.indica_contato .componente__menu div:not(.ind_servicos){
+.cabecalho__nav-bar.indica_contato .componente__menu div:not(.bolinha__contato) {
     display: none;
 }
 
 
-
-
 /* ----------------- VERSÃO MOBILE ---------------*/
 
-
-@media screen and (max-width: 900px){
-
+@media screen and (max-width: 900px) {
     /* ============== cabecalho =================  */
-    header{
+    header {
         display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        padding: 40px 0px;
+        padding: 20px 0px;
     }
-
-    .cabecalho__nav-bar{
+    .cabecalho__nav-bar {
         display: flex;
         gap: 40px;
-        margin-top: 20px;  
+        margin-top: 20px;
     }
-
-    .componente__menu{
+    .componente__menu {
         font-size: 16px;
     }
-    .bolinha__indicadora{
-        display: none;
-    }
-/* =================================================== */
+    
+    /* =================================================== */
+    /* =============== section - inicio Mobile =========== */
 
-
-
-/* =============== section - inicio Mobile =========== */
-    .inicio{
+    .inicio {
         display: flex;
         background: var(--azul-escuro);
         justify-content: center;
         padding: 190px 30px;
-        
-
     }
-
-    .imagem__inicio{
-        display:none;
+    .imagem__inicio {
+        display: none;
     }
-
-    .texto__inicio{
+    .texto__inicio {
         font-size: 32px;
     }
-
-    .p__inicio{
+    .p__inicio {
         font-size: 10px;
     }
-
-
-/* =========================================== */
-    
-
-
-/* ======= section - quem somos mobile ======== */
-
-    .quem-somos h2{
+    /* =========================================== */
+    /* ======= section - quem somos mobile ======== */
+    .quem-somos h2 {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
         padding: 30px 0px;
-          
     }
-
-    .principal__quem-somos{
+    .principal__quem-somos {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .imagem__quem-somos{
+    .imagem__quem-somos {
         margin-top: 50px;
     }
-
-/* =========================================== */
-
-
-    .principal__servicos{
+    /* =========================================== */
+    .principal__servicos {
         display: flex;
         flex-direction: column;
     }
-
-    
     /* ================================================= */
-
-
-
     /* ============= section - servicos - mobile ======= */
-    .servicos{
+    .servicos {
         display: flex;
         flex-direction: column;
         padding: 30px 0px;
     }
-
-    .principal__servicos{
+    .principal__servicos {
         display: flex;
         gap: 80px;
     }
-/* =============================================== */
-
-
-   .contato{
-       display: flex;
-       align-items: center;
-       padding: 20px;
-       
-   }
-   .formulario__contato{
-       display: flex;
-       width: 100%;
-       margin-bottom: 30px;
-       
-   }
-   
-   .imagem__contato{
-    display: none;
-   }
-
-
-    textarea, input{
-        margin-top: 10px; 
+    /* =============================================== */
+    .contato {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    .formulario__contato {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .imagem__contato {
+        display: none;
+    }
+    .botao__enviar{
+        width: 100%;
+    }
+    textarea,
+    input {
+        margin-top: 10px;
     }
 
-    footer{
+    
+    footer {
         display: flex;
         width: 100%;
         padding: 0px;
-
         font-size: 8px;
     }
-
-    .icones__rodape{
+    .icones__rodape {
         display: flex;
         gap: 10px;
     }
-
 }
