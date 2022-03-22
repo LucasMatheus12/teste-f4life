@@ -80,8 +80,8 @@ botao.addEventListener('click', event => {
         (qtd_aroba === 1) && //verifica quantidade de arroba no email 
         (qtd_elementos === 0) && // verifica se tem caractere especial que tem no email 
         (email[email.length - 1] !== ponto) && //verifica se tem ponto no final do email.
-        ((email[email.indexOf(arroba) + 1]) !== ponto)&& //verifica se tem um ponto após o arroba. 
-        ((email[email.indexOf(arroba) - 1]) !== ponto)//verifica se tem um ponto antes do arroba
+        ((email[email.indexOf(arroba) + 1]) !== ponto)&& //verifica 
+        ((email[email.indexOf(arroba) - 1]) !== ponto)
         
     ) {
         contador += 1
