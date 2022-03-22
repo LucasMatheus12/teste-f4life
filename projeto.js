@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
 });
 
 
+
 window.addEventListener("scroll", function () {
 
     let navBar = document.querySelector(".cabecalho__nav-bar");
@@ -32,13 +33,16 @@ botao.addEventListener('click', event => {
     let email = document.getElementById("email").value;
     
     let quantidade = 0;
-
+    let qtd_aroba = 0; 
+    
     //percorrendo o email. 
     for (let i = 0; i < email.length; i++) {
         if (email[i] === "@") {
             quantidade++;
         }
     }
+
+    
     // ----------------VERIFICAÇÃO-----------------------------------
     const qtd_Caracter = 33;
     const ponto = ".";
@@ -46,14 +50,22 @@ botao.addEventListener('click', event => {
     const espaco = " "
     const qtd_caracter_dom = 16;
 
-     
+
+
+    // -------------conta quantos arroba tem-----------
+    for(let i = 0; i < email.length; i++){
+        if(email[i] === arroba){
+            qtd_aroba++; 
+        }
+    }
     let contador = 0; 
 
     if (email.includes(arroba) &&      //verifica o @ 
         (email.indexOf(arroba) < qtd_Caracter) && //verifica a quantidade de letras
         (email.includes(ponto)) &&  // verifica se contem o ponto 
         (!email.includes(espaco)) && // verifica se tem espaço no email 
-        ((email.indexOf(ponto) - 1 - email.indexOf(arroba) - 1) < qtd_caracter_dom)
+        ((email.indexOf(ponto) - 1 - email.indexOf(arroba) - 1) < qtd_caracter_dom)&&
+        (qtd_aroba === 1)
     ){
         contador+=1
     }else{

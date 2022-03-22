@@ -261,7 +261,6 @@ input::placeholder {
 
 #mensagem_enviar{
     display: flex;
-    margin-top: 20px;
     justify-content: flex-start;
     align-items: center;
     font-size: 18px;
@@ -276,9 +275,10 @@ input::placeholder {
 }
 .button_form{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    margin-top: 5px;
 }
 .desaparece{
     display: none;
@@ -286,10 +286,13 @@ input::placeholder {
 
 .aparece{
     display: inline;
-    color: red;
-    background-color: white;
+    color: var(--azul-claro);
+    background-color:none;
+    border: 3px solid var(--azul-claro);
     width: 50px;
     align-items: center;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 
