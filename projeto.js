@@ -5,7 +5,7 @@ let yCont;
 window.addEventListener("load", function () {
     contat = document.querySelector(".contato");
     yCont = contat.offsetTop;
-    yCont -= 50;
+    yCont -= 0;
 });
 
 
@@ -34,6 +34,7 @@ botao.addEventListener('click', event => {
     
     let quantidade = 0;
     let qtd_aroba = 0; 
+    let qtd_elementos= 0; 
     
     //percorrendo o email. 
     for (let i = 0; i < email.length; i++) {
@@ -49,7 +50,7 @@ botao.addEventListener('click', event => {
     const arroba = "@"
     const espaco = " "
     const qtd_caracter_dom = 16;
-
+    const elementos = "*&¨%$#!-+§{}[]?;><,'"+ '"^~'; 
 
 
     // -------------conta quantos arroba tem-----------
@@ -58,6 +59,17 @@ botao.addEventListener('click', event => {
             qtd_aroba++; 
         }
     }
+
+    //--------------- compara com elementos de caracteres especiais -----------
+
+    for(let i = 0; i < email.length; i++){
+        for(let j= 0; j< elementos.length;j++){
+            if(email[i] === elementos[j]){
+                qtd_elementos++;
+            }
+        }
+    }
+
     let contador = 0; 
 
     if (email.includes(arroba) &&      //verifica o @ 
@@ -65,7 +77,8 @@ botao.addEventListener('click', event => {
         (email.includes(ponto)) &&  // verifica se contem o ponto 
         (!email.includes(espaco)) && // verifica se tem espaço no email 
         ((email.indexOf(ponto) - 1 - email.indexOf(arroba) - 1) < qtd_caracter_dom)&&
-        (qtd_aroba === 1)
+        (qtd_aroba === 1)&&
+        (qtd_elementos === 0)
     ){
         contador+=1
     }else{
